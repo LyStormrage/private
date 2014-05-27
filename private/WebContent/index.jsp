@@ -25,34 +25,42 @@
 		var desktopPanelHeight = $("#centerContainer").innerHeight();
 
 		$("#container1").css({
-			left : windowWidth / 2 - containerWidth - containerLeft / 2-3,
+			left : windowWidth / 2 - containerWidth - containerLeft / 2-3
 		});
 		$("#container2").css({
-			left : windowWidth / 2 + containerLeft / 2+3,
+			left : windowWidth / 2 + containerLeft / 2+3
 		});
 		$("#container3").css({
 			left : windowWidth / 2 - containerWidth - containerLeft / 2-3,
 		});
 		$("#container4").css({
-			left : windowWidth / 2 + containerLeft / 2+3,
+			left : windowWidth / 2 + containerLeft / 2+3
+		});
+		
+		$("#topContainer img").css({
+			left : windowWidth / 2 - containerWidth - containerLeft / 2-3
+		});
+		$("#topContainer #fwlDiv").css({
+			left : windowWidth / 2 + containerLeft / 2+3
 		});
 	}
 </script>
 </head>
 <body>
 	<div id="wallpapers">
-		<img style="margin-top: -188.5px; margin-left: -157px;" src="style/images/cloud.jpg"></img>
+		<img style="margin-top: -188.5px; margin-left: -157px;" src="style/images/default.jpg"></img>
 	</div>
 	<div id="topContainer">
 		<img width="342" height="46" style="border-width: 0px; left: 280px; top: 25px; position: relative;" src="style/images/top-logo.png">
 		<div class="fwlDiv" id="fwlDiv">
 		    <img width="60" height="13" id="fwl_dqzx" src="style/images/fwl_dqzx.png">&nbsp;
-		    <span class="fwlWz" id="dqzx">1</span>&nbsp;
+		    <span class="fwlWz" id="dqzx">20000</span>&nbsp;
 		    <img width="60" height="13" id="fwl_jrxz" src="style/images/fwl_jrxz.png">&nbsp;
-		    <span class="fwlWz" id="jrfw">2</span>&nbsp;
+		    <span class="fwlWz" id="jrfw">30000</span>&nbsp;
 		    <img width="60" height="13" id="fwl_zfwl" src="style/images/fwl_zfwl.png">&nbsp;
-		    <span class="fwlWz" id="zfwl">274</span>
+		    <span class="fwlWz" id="zfwl">50000</span>
 		</div>
+		<div class="closeImage" onclick="window.close()"></div>
 	</div>
 	<div id="centerContainer">
 		<div id="container1" class="appContainer">
@@ -66,17 +74,17 @@
 							<tr height="100%">
 								<td align="left" valign="top">
 									<ul>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_4.png"/></span>
-											<div class="text text_word6">数据资源上报</div>
+											<div class="text text_word6">物资浏览</div>
 										</li>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_10.png"/></span>
-											<div class="text text_word6">数据资源统计</div>
+											<div class="text text_word6">物资查询</div>
 										</li>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_16.png"/></span>
-											<div class="text text_word6">数据下载</div>
+											<div class="text text_word6">综合查询</div>
 										</li>
 									</ul>
 								</td>
@@ -97,13 +105,13 @@
 							<tr height="100%">
 								<td align="left" valign="top">
 									<ul>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_25.png"/></span>
-											<div class="text text_word6">考核情况统计</div>
+											<div class="text text_word6">法规浏览</div>
 										</li>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_34.png"/></span>
-											<div class="text text_word6">数据接口目录</div>
+											<div class="text text_word6">法规维护</div>
 										</li>
 									</ul>
 								</td>
@@ -124,13 +132,29 @@
 							<tr height="100%">
 								<td align="left" valign="top">
 									<ul>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_86.png"/></span>
-											<div class="text text_word6">分布式查询</div>
+											<div class="text text_word6">数据导入</div>
 										</li>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
-											<span class="icon"><img src="style/images/icon_sys_87.png"/></span>
-											<div class="text text_word6">云搜索</div>
+										<li class="desktop_icon" >
+											<span class="icon"><img src="style/images/icon_sys_61.png"/></span>
+											<div class="text text_word6">数据导出</div>
+										</li>
+										<li class="desktop_icon" >
+											<span class="icon"><img src="style/images/icon_sys_79.png"/></span>
+											<div class="text text_word6">数据剪裁</div>
+										</li>
+										<li class="desktop_icon" >
+											<span class="icon"><img src="style/images/icon_sys_77.png"/></span>
+											<div class="text text_word6">数据备份</div>
+										</li>
+										<li class="desktop_icon" >
+											<span class="icon"><img src="style/images/icon_sys_76.png"/></span>
+											<div class="text text_word6">用户管理</div>
+										</li>
+										<li class="desktop_icon" >
+											<span class="icon"><img src="style/images/icon_sys_65.png"/></span>
+											<div class="text text_word6">版本管理</div>
 										</li>
 									</ul>
 								</td>
@@ -151,19 +175,19 @@
 							<tr height="100%">
 								<td align="left" valign="top">
 									<ul>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_88.png"/></span>
-											<div class="text text_word6">通知公告</div>
+											<div class="text text_word6">收藏夹</div>
 										</li>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_89.png"/></span>
-											<div class="text text_word6">访问统计</div>
+											<div class="text text_word6">更换桌面</div>
 										</li>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_90.png"/></span>
 											<div class="text text_word6">时钟</div>
 										</li>
-										<li class="desktop_icon" style="margin: 10px 10px 0px; float: left;">
+										<li class="desktop_icon" >
 											<span class="icon"><img src="style/images/icon_sys_91.png"/></span>
 											<div class="text text_word6">月历</div>
 										</li>
