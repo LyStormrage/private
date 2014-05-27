@@ -1,0 +1,184 @@
+@CHARSET "UTF-8";
+
+html,body {
+	padding: 100px 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#wallpapers {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -100;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 1px;
+}
+
+#topContainer {
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#centerContainer {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+}
+
+#bottomContainer {
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#container1 {
+	position: absolute;
+	left: 275px;
+	top: 20px;
+}
+
+#container2 {
+	position: absolute;
+	left: 691px;
+	top: 20px;
+}
+
+#container3 {
+	position: absolute;
+	left: 275px;
+	top: 256px;
+}
+
+#container4 {
+	position: absolute;
+	left: 691px;
+	top: 256px;
+}
+
+.appContainer {
+	width: 400px;
+	height: 220px;
+}
+
+.palletElementTableContainer {
+	background: url(../images/indexContainer.png) no-repeat;
+}
+
+* html .palletElementTableContainer {
+	background: none;
+	_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,
+		src="themes/default/images/indexContainer.png", sizingMethod="scale" );
+}
+
+.palletNameContainer {
+	font-family: "微软雅黑", "黑体";
+	font-size: 24px;
+	line-height: 24px;
+	text-align: right;
+	color: #FFFFFF;
+}
+
+.palletNameContainer img {
+	margin-top: 30px;
+}
+
+.palletElementContainer ul {
+	list-style: none;
+	padding: 5px;
+	margin: 0px;
+}
+
+.palletElementContainer li {
+	position: relative;
+	cursor: pointer;
+}
+.desktop_icon span {
+	display:block;
+}
+.desktop_icon:hover {
+	background-color: #1770AA;
+}
+.desktop_icon .icon {
+	width:72px;
+	height:72px;
+	margin:2px auto;
+	/** margin:10px auto 0px auto; **/
+	outline:none;
+	-moz-user-select:none;
+}
+.desktop_icon .icon img{
+	width:72px;
+	height:72px;
+	}
+.desktop_icon .text {
+	/** display:inline-block; **/
+	width:auto;
+	height:24px;
+	line-height:24px;
+	text-align:center;
+	color:#fff;
+	/** background:url(../images/iconTextbg.png) no-repeat left center;
+	_background:url(../images/iconTextbg_ie6.png) no-repeat left center; **/
+	
+	position:relative;
+	/** padding-left:10px;
+	margin-right:10px; **/
+	outline:none;
+	-moz-user-select:none;	
+	font-family:"微软雅黑";
+	/**text-shadow: 0px 0px 8px #000;**/
+	font-size:12px;
+}
+
+.desktop_icon .text_word2{
+    background:url(../images/word_2.png) no-repeat center center;
+    display:inline-block;
+    width:48px;
+}
+.desktop_icon .text_word4{
+    background:url(../images/word_4.png) no-repeat center center;
+    display:inline-block;
+    width:70px;
+}
+.desktop_icon .text_word6{
+    background:url(../images/word_6.png) no-repeat center center;
+    display:inline-block;
+    width:86px;
+}
+.fwlDiv{
+	position:relative;
+	line-height:30px;
+	_padding-top:10px;
+	width:420px;
+	height:30px;
+	border-width:0;
+	top:0px;
+	left:690px;
+	display:block;
+	background:url(../images/fwl_bg.png) no-repeat;
+	text-align: center;
+	cursor: pointer;
+}
+.fwlWz{
+	font-weight:bold;
+	color:yellow;
+}
